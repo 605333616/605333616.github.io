@@ -1,5 +1,12 @@
 ---
 layout: post
+title:  "我的第一篇博客"
+date:   2019-10-31 11:57:44 +0800
+categories: jekyll update
+---
+
+<!-- ---
+layout: post
 title:  "Welcome to Jekyll!"
 date:   2019-10-31 11:57:44 +0800
 categories: jekyll update
@@ -26,4 +33,4 @@ Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most ou
 
 [jekyll-docs]: https://jekyllrb.com/docs/home
 [jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+[jekyll-talk]: https://talk.jekyllrb.com/ -->
