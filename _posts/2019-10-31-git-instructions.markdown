@@ -10,198 +10,149 @@ categories: jekyll update
 
 3. [版本的回退，以及回退后的前进](#3)
 
-4. [分支](#4)
+4. [远程仓库](#4)
+
+5. [分支](#5)
 
 
+<div id="1"></div> 
 
 # 表明身份
-<div id="1"></div>  
->```java
-  git config --global user.name "<你的名字>"  
 ```
-提交git名字
+  #提交git名字
+  git config --global user.name "<你的名字>"  
 
->```java
+  #提交git邮箱
   git config --global user.email "<你的邮箱>" 
 ```
-提交git邮箱
 
 ***
+
+<div id="2"></div> 
 
 # 使用版本库 
-<div id="2"></div> 
->```java
+```
+  #初始化git库 
   git init  
-```
-初始化git库 
 
-
->```java
+  #查看git的更改信息，以及是否提交,也可查看冲突文件
   git status 
-```
-查看git的更改信息，以及是否提交,也可查看冲突文件
+  
+  #提交更改的文件到暂存区
+  git add <文件名>  
 
->```java
-  git add <文件名>   
-```
-提交更改的文件到暂存区
-
->```java
+  #提交更改的文件到版本库
   git commit -m "<更改版本的介绍>" 
 ```
-提交更改的文件到版本库
-
 ***
+
+ <div id="3"></div>
 
 # 版本的回退，以及回退后的前进  
-<div id="3"></div>
-  >```java
-  git log 
   ```
-  >可以查看add提交的日志，也可以查看分支合并状况  
-   
->```java
+  #可以查看add提交的日志，也可以查看分支合并状况
+  git log 
+    
+  #退回上一个版本
   git reset --hard HEAD^  
-```
->退回上一个版本
-
->```java
+  
+  #可在版本回退后，在进入在现版本之后的版本
   git reset --hard <版本id>   
-```
->可在版本回退后，在进入在现版本之后的版本
-
->```java
+  
+  #可以查看工作区和版本库最新的区别
   git diff HEAD -- <文件名>   
-```
->可以查看工作区和版本库最新的区别
-
->```java
+  
+  #可以丢弃工作区的修改,实际是用版本库的版本替换到工作区
   git checkout -- file   
-```
->可以丢弃工作区的修改,实际是用版本库的版本替换到工作区
-
->```java
+  
+  #可以撤销add暂存区
   git restet HEAD <文件名>  
-```
->可以撤销add暂存区 
 
->```java
+  #删除文件(注意：没被添加到版本库的文件无法恢复)
   git rm <文件名>   
+
 ```  
->删除文件(注意：没被添加到版本库的文件无法恢复)
 
 ***
-# 远程仓库
+
 <div id="4"></div>
->```java
+
+# 远程仓库
+```
+  #id_rsa是私匙，id_rsa.pub是公匙,在github的Add SSH Key上粘贴id_rsa.pub内容
   ssh-keygen -t rsa -C "你的github邮箱" 
-```
->id_rsa是私匙，id_rsa.pub是公匙,在github的Add SSH Key上粘贴id_rsa.pub内容
 
->```java
+  #添加远程库，origin为添加远程库的名字
   git remote add origin <你要推送的远程库> 
-```
->添加远程库，origin为添加远程库的名字
 
->```java
+  #把当前分支master推送到origin远程分支上 -u把远程分支与当前分支关联起来之后可省略
   git push -u origin master 
-```
->把当前分支master推送到origin远程分支上 -u把远程分支与当前分支关联起来之后可省略
 
->```java
+  #克隆一个远程库,git://前缀可使用ssh匙
   git clone <你要克隆的远程库> 
-```
->克隆一个远程库,git://前缀可使用ssh匙
 
->```java
+  #获取远程库的更新
   git pull 
 ```
->获取远程库的更新
-
 ***
-# 分支 
+
 <div id="5"></div>
->```java
+
+# 分支 
+```
+  #创建分支并切换到创建分支 -b表示创建并切换(注意：建议使用switch)
   git checkout -b <分支名> 
-```
-创建分支并切换到创建分支 -b表示创建并切换(注意：建议使用switch)
 
->```java
+  #查看当前分支
   git branch 
-```
-查看当前分支 
 
->```java
+  #创建分支
   git branch <分支名> 
-```
-创建分支
 
->```java
+  #合并指定分支到当前分支
   git merge <分支名> 
-```
-合并指定分支到当前分支
 
->```java
+  #创建并切换分支
   git switch -c <分支名> 
-```
-创建并切换分支
 
->```java
+  #切换到已有分支
   git switch <分支名> 
-```
-切换到已有分支
 
->```java
+  #删除对应分支
   git branch -d <分支名> 
-``` 
-删除对应分支
 
->***
-> bug处理分支  
-  >>```java
+
+  #bug处理分支-------------------------------------------------------------
+  #新建分支储存工作区
   git stash 
-  ```
-  新建分支储存工作区
-  >>```java
+
+  #恢复被stash存储的工作区
   git stash apply 
-  ```
-  恢复被stash存储的工作区
-  >>```java
+
+  #删除stash工作区的内容
   git stash drop
-  ```
- 删除stash工作区的内容
-  >>```java
+
+  #恢复被stash工作区存储的内容,并删除stash工作区
   git stash pop
-  ```
- 恢复被stash工作区存储的内容,并删除stash工作区
-  >>```java
+
+  #查看被stash储存的内容
   git stash list
-  ```
- 查看被stash储存的内容
+  #-------------------------------------------------------------------------
 
->>***
-
-  >```java
+  #复制一个特定的提交到当前分支
   git cherry-pick
-  ```
-   复制一个特定的提交到当前分支
 
-  >```java
+  #查看分支
   git remote
-  ```
-   查看分支
 
-  >```java
+  #显示更详细的信息
   git remote -v
-  ```
-   显示更详细的信息
 
-  >```java
+  #推送相应分支到远程库
   git push origin <分支名>
-  ```
-   推送相应分支到远程库
 
-  >```java
+  #取消push pull所造成的历史分岔
   git rebase 
+
+   
   ```
-   取消push pull所造成的历史分岔
