@@ -121,24 +121,6 @@ categories: jekyll update
   #删除对应分支
   git branch -d <分支名> 
 
-
-  #bug处理分支-------------------------------------------------------------
-  #新建分支储存工作区
-  git stash 
-
-  #恢复被stash存储的工作区
-  git stash apply 
-
-  #删除stash工作区的内容
-  git stash drop
-
-  #恢复被stash工作区存储的内容,并删除stash工作区
-  git stash pop
-
-  #查看被stash储存的内容
-  git stash list
-  #-------------------------------------------------------------------------
-
   #复制一个特定的提交到当前分支
   git cherry-pick
 
@@ -153,6 +135,24 @@ categories: jekyll update
 
   #取消push pull所造成的历史分岔
   git rebase 
+  ```
+  
+    
+  - bug处理分支
 
-   
+  ```  
+  #新建分支储存工作区
+  git stash 
+
+  #恢复被stash存储的工作区
+  git stash apply 
+
+  #删除stash工作区的内容
+  git stash drop
+
+  #恢复被stash工作区存储的内容,并删除stash工作区
+  git stash pop
+
+  #查看被stash储存的内容
+  git stash list
   ```
