@@ -70,7 +70,6 @@ categories: jekyll update
 
   #删除文件(注意：没被添加到版本库的文件无法恢复)
   git rm <文件名>   
-
 ```  
 
 ***
