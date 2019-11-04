@@ -13,7 +13,7 @@ categories: jekyll update
       netstat -ap|grep 80亦可 lsof -i:80 , netstat -anl | grep 80
  4. 查看程序名的pid  
       ps aux | grep 程序名
- 5. 查看80端口是被哪个服务使用着
+ 5. 查看80端口是被哪个服务使用着  
       netstat -tunlp | grep :80  
 
 # 结束文件，kill介绍    
