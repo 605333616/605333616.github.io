@@ -4,7 +4,9 @@ title:  "二进制"
 date:   2019-11-07 11:34:44 +0800
 categories: jekyll update
 ---
+<head>
 <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+</head>
 
 - #### 为什么是二进制
 计算机的底层一般使用的就是二进制，因为计算机是用数字电路搭建而成的，所以用二进制是
