@@ -1,9 +1,10 @@
 ---
 layout: post
 title:  "Ubuntu 常用指令"
-date:   2019-11-19 11:57:44 +0800
+date:   2019-11-19 11:40:44 +0800
 categories: jekyll update
 ---
+
 <div style="z-index:999;display: block; position: fixed; left: 220px; top: 150px;">
   <div class="content">
   <div><h4 style="margin-left:25px">目录</h4></div>
@@ -91,4 +92,3 @@ x ------------1
 -rw-rw-rw- (666) 每个人都有读写的权限  
 -rwxrwxrwx (777) 每个人都有读写和执行的权限  
 ```
-
