@@ -57,11 +57,11 @@ categories: jekyll update
 |0    |1    |0    |
 |1    |0    |0    |
 
-### 非门
-非门电路图  
-![非门电路图](https://raw.githubusercontent.com/605333616/Gallery/master/LogicGate/%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%9B%BE.png)  
-非门逻辑图  
-![非门逻辑图](https://raw.githubusercontent.com/605333616/Gallery/master/LogicGate/%E5%8F%8D%E6%8E%A5%E9%80%BB%E8%BE%91%E9%97%A8.png)  
+### 反向器
+反向器电路图  
+![反向器电路图](https://raw.githubusercontent.com/605333616/Gallery/master/LogicGate/%E5%8F%8D%E6%8E%A5%E7%94%B5%E8%B7%AF%E5%9B%BE.png)  
+反向器逻辑图  
+![反向器逻辑图](https://raw.githubusercontent.com/605333616/Gallery/master/LogicGate/%E5%8F%8D%E6%8E%A5%E9%80%BB%E8%BE%91%E9%97%A8.png)  
 电路信号
 
 |电信号|转换  |
