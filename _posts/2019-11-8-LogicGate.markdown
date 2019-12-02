@@ -33,7 +33,7 @@ categories: jekyll update
 |0    |0    |1    |
 |1    |1    |1    |
 
-### 异与门
+### 与非门
 异或与门电路图  
 ![异或与门电路图](https://raw.githubusercontent.com/605333616/Gallery/master/LogicGate/%E5%BC%82%E4%B8%8E%E9%97%A8%E7%94%B5%E8%B7%AF%E5%9B%BE.png)  
 异或与门逻辑图  
@@ -45,7 +45,7 @@ categories: jekyll update
 |0    |1    |1    |
 |1    |1    |0    |
 
-### 异或门
+### 或非门
 异或门电路图  
 ![异或门电路图](https://raw.githubusercontent.com/605333616/Gallery/master/LogicGate/%E5%BC%82%E6%88%96%E9%97%A8%E7%94%B5%E8%B7%AF%E5%9B%BE.png)  
 异或门逻辑图  
