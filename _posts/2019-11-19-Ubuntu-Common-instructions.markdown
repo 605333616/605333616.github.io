@@ -7,7 +7,7 @@ categories: jekyll update
 
 <div style="z-index:999;display: block; position: fixed; margin-left: -20%; top: 150px;">
   <div class="content">
-  <div style="display: flex;"><h4 style="margin-left:30px">目录</h4><a id="c2" style="margin-left:120px;" href="#" onclick="xian()">隐藏</a></div>
+  <div style="display: flex;"><h4 style="margin-left:30px">目录</h4></div>
   <ol style="margin-top:3px;" id="c1">
   <li>
   <a href="#a1">查看端口占用，Netstat介绍</a><br/>
@@ -144,19 +144,3 @@ x ------------1
   -r   指示rm将<目标文件>列出的全部进行递归删除
   -i   删除时,会给以提示
   ```
-
-  <script>
-        var i=1
-        function xian(){
-          if(i==1){
-            document.getElementById("c1").style.display= "none "; 
-            i=0;
-            document.getElementById("c2").style="margin-left:20px;"
-            }
-          else{
-          document.getElementById("c1").style.display= "inline "; 
-          document.getElementById("c2").style="margin-left:120px;"
-          i=1
-        }
-      }
-  </script>
