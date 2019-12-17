@@ -16,10 +16,10 @@ categories: jekyll update
 ![与门逻辑门图](https://raw.githubusercontent.com/605333616/Gallery/master/LogicGate/%E4%B8%8E%E9%97%A8%E9%80%BB%E8%BE%91%E9%97%A8%E5%9B%BE.png)
 电路信号 
 
-|电信号|0|1|
+|电信号|0    |1    |
 |:---:|:---:|:---:|
-|0|0|0|
-|1|0|1|
+|0    |0    |0    |
+|1    |0    |1    |
 
 ### 或门
 或门的电路图

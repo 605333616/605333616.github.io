@@ -13,6 +13,6 @@ permalink: /Computer Basics/
 
 - [二进制]({% post_url 2019-11-7-Binary %})
 - [逻辑门]({% post_url 2019-11-8-LogicGate %})
-- [计算机系统]()
+- [计算机系统]({% post_url 2019-12-16-CSindex %})
 - [计算机历史总结]()
 - [汇编]()
