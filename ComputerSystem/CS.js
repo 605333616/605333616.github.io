@@ -18,7 +18,7 @@ var TofcName=[//目录大标题
 "并发编程"]
 
 var TofcNameUrl=[//大标提ULR
-"http://127.0.0.1:4000/jekyll/update/2019/12/17/CSInformation.html",
+"https://605333616.github.io/jekyll/update/2019/12/17/CSInformation.html",
 "",
 "",
 "",
@@ -56,7 +56,7 @@ for(var i=0;i<TofcLName.length;i++){
 
 
 
-var TofcNum='<li><button class="TOfC">/</button><a href="http://127.0.0.1:4000/jekyll/update/2019/12/16/CSindex.html">介绍</a></li>'
+var TofcNum='<li><button class="TOfC">/</button><a href="https://605333616.github.io/jekyll/update/2019/12/16/CSindex.html">介绍</a></li>'
 var TofcId="TofcId"
 for(var i=0;i<TofcName.length;i++){
     TofcId="TofcId"+i;
