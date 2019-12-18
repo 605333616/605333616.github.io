@@ -4,7 +4,7 @@ title:  "计算机系统介绍"
 date:   2019-10-31 10:15:00 +0800
 categories: jekyll update
 ---
-<link rel="stylesheet" type="text/css" href="http://127.0.0.1:4000/ComputerSystem/CS.css">
+<link rel="stylesheet" type="text/css" href="https://605333616.github.io/ComputerSystem/CS.css">
 <div id="tableOfContents" style="z-index:999;display: block; position: fixed; margin-left: -20%; top: 150px;">
 </div>
 
@@ -14,5 +14,5 @@ categories: jekyll update
 还要更深入的看待计算机系统的构成，以及计算机与各个硬件的交互原理与组成。与《深入理解计算机系统》这本书一样一共
 分为12章。
 
-<script type="text/javascript" src="http://127.0.0.1:4000/ComputerSystem/CS.js">
+<script type="text/javascript" src="https://605333616.github.io/ComputerSystem/CS.js">
 </script>
