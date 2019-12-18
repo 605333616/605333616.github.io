@@ -1,64 +1,10 @@
 ---
 layout: post
 title:  "计算机系统介绍"
-date:   2019-12-16 10:15:00 +0800
+date:   2019-10-31 10:15:00 +0800
 categories: jekyll update
 ---
-<style type="text/css">
-    .TOfC{
-        margin: 1px;
-        padding: 0;
-        width: 20px;
-        height: 20px;
-        border: 1px solid transparent;
-        outline: none; 
-    }
-</style>
-
-<!-- <div style="z-index:999;display: block; position: fixed; margin-left: -20%; top: 150px;">
-  <div class="content">
-  <div style="display: flex;"><h4 style="margin-left:50px">目录</h4></div>
-  <ol style="margin-top:3px;list-style:none" id="c1">
-  <li>
-  <button class="TOfC">+</button><a href="#a1">计算系统信息处理</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a2">信息的处理与显示</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a3">程序的底层显示</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a4">CPU的体系结构</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a4">优化程序性能</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a4">存储器的层次结构</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a1">链接</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a2">异常控制流</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a3">虚拟储存器</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a4">系统I/O</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a4">网路编程</a><br/>
-  </li>
-  <li>
-  <button class="TOfC">+</button><a href="#a4">并发编程</a><br/>
-  </li>
-  </ol>
-  </div>
-</div> -->
-
+<link rel="stylesheet" type="text/css" href="http://127.0.0.1:4000/ComputerSystem/CS.css">
 <div id="tableOfContents" style="z-index:999;display: block; position: fixed; margin-left: -20%; top: 150px;">
 </div>
 
@@ -68,73 +14,5 @@ categories: jekyll update
 还要更深入的看待计算机系统的构成，以及计算机与各个硬件的交互原理与组成。与《深入理解计算机系统》这本书一样一共
 分为12章。
 
-<script>
- document.getElementById("tableOfContents").innerHTML='<div class="content">'+
-  '<div style="display: flex;"><h4 style="margin-left:50px">目录</h4></div>'+
-  '<ol style="margin-top:3px;list-style:none" id="c1">'+
-  '</ol></div></div>';
-  var TofcName=["计算系统信息处理","信息的处理与显示","程序的底层显示","CPU的体系结构","优化程序性能","存储器的层次结构","链接","异常控制流","虚拟储存器","系统I/O","网路编程","并发编程"]
-  var TofcLName=
-  [["1","2","3"],
-  ["","",""],
-  ["","",""],
-  ["","",""],
-  ["","",""],
-  ["","",""],
-  ["","",""],
-  ["","",""],
-  ["","",""],
-  ["","",""],
-  ["","",""],
-  ["","",""]]
-  var TofcNum=""
-  var TofcId="TofcId"
-  for(var i=0;i<TofcName.length;i++){
-      TofcId="TofcId"+i;
-      Tofctext='<li>'+
-        '<button id="'+TofcId+'" class="TOfC" onclick="buttonDisplay('+i+')">+</button><a href="#a1">'+TofcName[i]+'</a><br/>'+
-        '<ol style="margin-top:3px;list-style:none" id="lc'+i+'"></ol>'+
-        '</li>';
-      TofcNum=TofcNum+Tofctext;
-  }
-  document.getElementById("c1").innerHTML=TofcNum;
-
-    for(var i=0;i<TofcLName.length;i++){
-      var TofcNum=""
-      for(var j=0;j<TofcLName[i].length;j++){
-      TofcLtext='<li>'+TofcLName[i][j]+'</li>';
-      TofcNum=TofcNum+TofcLtext
-      }
-      cid="lc"+i
-      document.getElementById(cid).innerHTML=TofcNum;
-      document.getElementById(cid).style.display = "none";
-  }
-
-  function buttonDisplay(num){
-        var id="TofcId"+num
-        cid="lc"+num
-        id=document.getElementById(id);
-        cid=document.getElementById(cid);
-        if(id.innerHTML=="+"){
-          id.innerHTML="-";
-          cid.style.display = "block";
-          for(var i=0;i<TofcLName.length;i++){
-            fid="TofcId"+i
-            fcid="lc"+i
-            fid=document.getElementById(fid);
-            fcid=document.getElementById(fcid);
-            if(i==num){
-              continue;
-            }
-            fid.innerHTML="+";
-            fcid.style.display = "none";
-          }
-        }
-        else{
-          id.innerHTML="+";
-          cid.style.display = "none";
-        }
-        
-      }
-  
+<script type="text/javascript" src="http://127.0.0.1:4000/ComputerSystem/CS.js">
 </script>
